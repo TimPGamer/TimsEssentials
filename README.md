@@ -16,7 +16,7 @@ on server-side and client-side.
 
 The /spawn command has 2 usages.
 
-###   1. Usage:
+### 1. Usage:
 
 The 1. usage will set the Spawn to the coordinates the player chooses. 
 Additionally the Spawn is set, once the world generates the first time.
@@ -25,7 +25,7 @@ Syntax:
 
 /spawn set <x> <y> <z>
 
-###   2. Usage:
+### 2. Usage:
 
 The 2. usage will teleport the Player, 
 that uses the command, to the previously set Spawn.
