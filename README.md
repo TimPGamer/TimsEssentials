@@ -9,7 +9,7 @@ on server-side and client-side.
 
 ## Current Features
 
-### Commands
+## Commands
 
 ### /spawn
 
