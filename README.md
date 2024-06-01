@@ -1,4 +1,4 @@
-# ${\color{red}This /space Mod /space is /space currently /space in /space Dev.}$
+# ${\color{red}This \space Mod \space is \space currently \space in \space Dev.}$
 
 # Tim's Essentials
 
