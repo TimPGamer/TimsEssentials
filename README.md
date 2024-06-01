@@ -1,4 +1,5 @@
-# ${\color{red}This \space Mod \space is \space currently \space in \space Dev.}$
+> [CAUTION]
+> # This Mod is currently in Dev
 
 # Tim's Essentials
 
