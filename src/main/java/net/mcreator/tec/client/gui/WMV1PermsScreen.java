@@ -80,17 +80,19 @@ public class WMV1PermsScreen extends AbstractContainerScreen<WMV1PermsMenu> {
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.label_world_manager_v1"), 82, 6, -12829636);
-		this.font.draw(poseStack, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.label_command_perms"), 87, 16, -12829636);
-		this.font.draw(poseStack, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.label_permission_level_04"), 117, 31, -12829636);
-		this.font.draw(poseStack, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.label_permission_name"), 7, 31, -12829636);
-		this.font.draw(poseStack, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.label_setting_spawn"), 12, 51, -12829636);
-		this.font.draw(poseStack, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.label_tp_to_spawn"), 12, 76, -12829636);
+		this.font.draw(poseStack, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.label_command_perms"), 7, 21, -12829636);
+		this.font.draw(poseStack, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.label_permission_level_04"), 117, 41, -12829636);
+		this.font.draw(poseStack, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.label_permission_name"), 12, 41, -12829636);
+		this.font.draw(poseStack, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.label_setting_spawn"), 17, 66, -12829636);
+		this.font.draw(poseStack, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.label_tp_to_spawn"), 17, 91, -12829636);
 		this.font.draw(poseStack,
 
-				UpdatePermSetSpawnProcedure.execute(world), 172, 51, -12829636);
+				UpdatePermSetSpawnProcedure.execute(world), 172, 66, -12829636);
 		this.font.draw(poseStack,
 
-				UpdatePermTPSpawnProcedure.execute(world), 172, 76, -12829636);
+				UpdatePermTPSpawnProcedure.execute(world), 172, 91, -12829636);
+		this.font.draw(poseStack, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.label_empty"), 2, 31, -12829636);
+		this.font.draw(poseStack, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.label_empty1"), 2, 51, -12829636);
 	}
 
 	@Override
@@ -111,7 +113,7 @@ public class WMV1PermsScreen extends AbstractContainerScreen<WMV1PermsMenu> {
 		});
 		guistate.put("button:button_back", button_back);
 		this.addRenderableWidget(button_back);
-		button_empty = new Button(this.leftPos + 187, this.topPos + 46, 20, 20, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.button_empty"), e -> {
+		button_empty = new Button(this.leftPos + 187, this.topPos + 61, 20, 20, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.button_empty"), e -> {
 			if (true) {
 				TimsEssentialCommandsMod.PACKET_HANDLER.sendToServer(new WMV1PermsButtonMessage(1, x, y, z));
 				WMV1PermsButtonMessage.handleButtonAction(entity, 1, x, y, z);
@@ -119,7 +121,7 @@ public class WMV1PermsScreen extends AbstractContainerScreen<WMV1PermsMenu> {
 		});
 		guistate.put("button:button_empty", button_empty);
 		this.addRenderableWidget(button_empty);
-		button_empty1 = new Button(this.leftPos + 142, this.topPos + 46, 20, 20, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.button_empty1"), e -> {
+		button_empty1 = new Button(this.leftPos + 137, this.topPos + 61, 20, 20, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.button_empty1"), e -> {
 			if (true) {
 				TimsEssentialCommandsMod.PACKET_HANDLER.sendToServer(new WMV1PermsButtonMessage(2, x, y, z));
 				WMV1PermsButtonMessage.handleButtonAction(entity, 2, x, y, z);
@@ -127,7 +129,7 @@ public class WMV1PermsScreen extends AbstractContainerScreen<WMV1PermsMenu> {
 		});
 		guistate.put("button:button_empty1", button_empty1);
 		this.addRenderableWidget(button_empty1);
-		button_empty2 = new Button(this.leftPos + 142, this.topPos + 71, 20, 20, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.button_empty2"), e -> {
+		button_empty2 = new Button(this.leftPos + 137, this.topPos + 86, 20, 20, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.button_empty2"), e -> {
 			if (true) {
 				TimsEssentialCommandsMod.PACKET_HANDLER.sendToServer(new WMV1PermsButtonMessage(3, x, y, z));
 				WMV1PermsButtonMessage.handleButtonAction(entity, 3, x, y, z);
@@ -135,7 +137,7 @@ public class WMV1PermsScreen extends AbstractContainerScreen<WMV1PermsMenu> {
 		});
 		guistate.put("button:button_empty2", button_empty2);
 		this.addRenderableWidget(button_empty2);
-		button_empty3 = new Button(this.leftPos + 187, this.topPos + 71, 20, 20, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.button_empty3"), e -> {
+		button_empty3 = new Button(this.leftPos + 187, this.topPos + 86, 20, 20, new TranslatableComponent("gui.tims_essential_commands.wmv_1_perms.button_empty3"), e -> {
 			if (true) {
 				TimsEssentialCommandsMod.PACKET_HANDLER.sendToServer(new WMV1PermsButtonMessage(4, x, y, z));
 				WMV1PermsButtonMessage.handleButtonAction(entity, 4, x, y, z);
