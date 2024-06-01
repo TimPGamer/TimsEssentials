@@ -1,0 +1,214 @@
+{
+  "_fv": 39,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 250,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_world_manager_v1",
+          "text": {
+            "fixedValue": "World Manager V1"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 171,
+          "y": 43
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_command_perms",
+          "text": {
+            "fixedValue": "Command Perms"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 176,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_permission_level_04",
+          "text": {
+            "fixedValue": "Permission Level (0-4)"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 206,
+          "y": 68
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_permission_name",
+          "text": {
+            "fixedValue": "Permission Name"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 96,
+          "y": 68
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_setting_spawn",
+          "text": {
+            "fixedValue": "Setting Spawn"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 101,
+          "y": 88
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_tp_to_spawn",
+          "text": {
+            "fixedValue": "TP to Spawn"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 101,
+          "y": 113
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_back",
+          "text": "<- Back",
+          "onClick": {
+            "name": "WMV1Back"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 96,
+          "y": 173
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_update_perm_set_spawn",
+          "text": {
+            "fixedValue": "",
+            "name": "UpdatePermSetSpawn"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 261,
+          "y": 88
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "+",
+          "onClick": {
+            "name": "PlusPermSetSpawn"
+          },
+          "width": 20,
+          "height": 20,
+          "x": 276,
+          "y": 83
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty1",
+          "text": "-",
+          "onClick": {
+            "name": "MinusPermSetSpawn"
+          },
+          "width": 20,
+          "height": 20,
+          "x": 231,
+          "y": 83
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty2",
+          "text": "-",
+          "onClick": {
+            "name": "MinusPermTPSpawn"
+          },
+          "width": 20,
+          "height": 20,
+          "x": 231,
+          "y": 108
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty3",
+          "text": "+",
+          "onClick": {
+            "name": "PlusPermTPSpawn"
+          },
+          "width": 20,
+          "height": 20,
+          "x": 276,
+          "y": 108
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_update_perm_tp_spawn",
+          "text": {
+            "fixedValue": "",
+            "name": "UpdatePermTPSpawn"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 261,
+          "y": 113
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 10,
+      "sy": 10,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

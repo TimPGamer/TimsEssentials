@@ -1,0 +1,12 @@
+{
+  "_fv": 39,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "O",
+    "keyBindingName": "World Manager V1",
+    "keyBindingCategoryKey": "ui",
+    "onKeyPressed": {
+      "name": "OpenWMV1"
+    }
+  }
+}

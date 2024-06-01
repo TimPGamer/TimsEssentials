@@ -1,0 +1,607 @@
+{
+  "mod_elements": [
+    {
+      "name": "Spawn",
+      "type": "command",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/command/SpawnCommand.java"
+        ]
+      },
+      "path": "~/commands"
+    },
+    {
+      "name": "Spawnset",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawnset",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/procedures/SpawnsetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/command_procedures"
+    },
+    {
+      "name": "Spawntp",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawntp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/procedures/SpawntpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/command_procedures"
+    },
+    {
+      "name": "Onfirstjoin",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onfirstjoin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/procedures/OnfirstjoinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/on_join"
+    },
+    {
+      "name": "WMV1Main",
+      "type": "gui",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wmv_1_main",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/world/inventory/WMV1MainMenu.java",
+          "src/main/java/net/mcreator/tec/client/gui/WMV1MainScreen.java",
+          "src/main/java/net/mcreator/tec/network/WMV1MainButtonMessage.java"
+        ]
+      },
+      "path": "~/GUIs"
+    },
+    {
+      "name": "WMV1Gamerules",
+      "type": "gui",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wmv_1_gamerules",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/client/gui/WMV1GamerulesScreen.java",
+          "src/main/java/net/mcreator/tec/network/WMV1GamerulesButtonMessage.java",
+          "src/main/java/net/mcreator/tec/world/inventory/WMV1GamerulesMenu.java"
+        ]
+      },
+      "path": "~/GUIs"
+    },
+    {
+      "name": "WMV1ToGamerules",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wmv_1_to_gamerules",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/procedures/WMV1ToGamerulesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI_procedures"
+    },
+    {
+      "name": "WMV1",
+      "type": "keybind",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wmv_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/network/WMV1Message.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "OpenWMV1",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_wmv_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/procedures/OpenWMV1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/keybind_procedures"
+    },
+    {
+      "name": "WMV1Perms",
+      "type": "gui",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wmv_1_perms",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/client/gui/WMV1PermsScreen.java",
+          "src/main/java/net/mcreator/tec/world/inventory/WMV1PermsMenu.java",
+          "src/main/java/net/mcreator/tec/network/WMV1PermsButtonMessage.java"
+        ]
+      },
+      "path": "~/GUIs"
+    },
+    {
+      "name": "WMV1ToPerms",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wmv_1_to_perms",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/procedures/WMV1ToPermsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI_procedures"
+    },
+    {
+      "name": "WMV1Back",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wmv_1_back",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/procedures/WMV1BackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI_procedures"
+    },
+    {
+      "name": "UpdatePermSetSpawn",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_perm_set_spawn",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/tec/procedures/UpdatePermSetSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI_procedures"
+    },
+    {
+      "name": "PlusPermSetSpawn",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plus_perm_set_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/procedures/PlusPermSetSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI_procedures/Perms/Set_Spawn"
+    },
+    {
+      "name": "MinusPermSetSpawn",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minus_perm_set_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/procedures/MinusPermSetSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI_procedures/Perms/Set_Spawn"
+    },
+    {
+      "name": "PlusPermTPSpawn",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plus_perm_tp_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/procedures/PlusPermTPSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI_procedures/Perms/TP_to_Spawn"
+    },
+    {
+      "name": "MinusPermTPSpawn",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minus_perm_tp_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/procedures/MinusPermTPSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI_procedures/Perms/TP_to_Spawn"
+    },
+    {
+      "name": "UpdatePermTPSpawn",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_perm_tp_spawn",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/tec/procedures/UpdatePermTPSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI_procedures"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "first_join",
+      "type": "number",
+      "scope": "map",
+      "value": "1.0"
+    },
+    {
+      "name": "First_Open_GUI",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
+    },
+    {
+      "name": "Set_Spawn_Perm_LVL",
+      "type": "number",
+      "scope": "map",
+      "value": "2.0"
+    },
+    {
+      "name": "spawn_x",
+      "type": "number",
+      "scope": "world",
+      "value": "0.5"
+    },
+    {
+      "name": "spawn_y",
+      "type": "number",
+      "scope": "world",
+      "value": "0.0"
+    },
+    {
+      "name": "spawn_z",
+      "type": "number",
+      "scope": "world",
+      "value": "0.5"
+    },
+    {
+      "name": "TP_to_Spawn_Perm_LVL",
+      "type": "number",
+      "scope": "map",
+      "value": "0.0"
+    },
+    {
+      "name": "WMV1_CBOutput",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
+    },
+    {
+      "name": "WMV1_DNCycle",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "gui.tims_essential_commands.wmv_1_perms.label_command_perms": "Command Perms",
+      "gui.tims_essential_commands.wmv_1_main.label_world_manager_v1": "World Manager V1",
+      "gui.tims_essential_commands.wmv_1_perms.label_tp_to_spawn": "TP to Spawn",
+      "gui.tims_essential_commands.wmv_1_gamerules.label_world_manager_v1": "World Manager V1",
+      "gui.tims_essential_commands.wmv_1_perms.TPtoSpawnPermLVL": "0",
+      "gui.tims_essential_commands.wmv_1_perms.label_world_manager_v1": "World Manager V1",
+      "gui.tims_essential_commands.wmv_1_perms.label_setting_spawn": "Setting Spawn",
+      "gui.tims_essential_commands.wmv_1_perms.label_permission_level_04": "Permission Level (0-4)",
+      "gui.tims_essential_commands.wmv_1_perms.button_empty1": "-",
+      "gui.tims_essential_commands.wmv_1_main.label_command_perms": "Command Perms",
+      "gui.tims_essential_commands.wmv_1_main.button_open1": "Open",
+      "gui.tims_essential_commands.wmv_1_perms.button_empty2": "-",
+      "gui.tims_essential_commands.wmv_1_perms.button_empty3": "+",
+      "gui.tims_essential_commands.wmv_1_perms.label_permission_name": "Permission Name",
+      "gui.tims_essential_commands.wmv_1_perms.button_reset1": "Reset",
+      "gui.tims_essential_commands.wmv_1_main.button_open": "Open",
+      "key.tims_essential_commands.wmv_1": "World Manager V1",
+      "gui.tims_essential_commands.wmv_1_perms.button_empty": "+",
+      "gui.tims_essential_commands.wmv_1_perms.SetSpawnPermLVL": "2",
+      "gui.tims_essential_commands.wmv_1_gamerules.DNCycle": "Daylight - Night Cycle",
+      "gui.tims_essential_commands.wmv_1_gamerules.button_back": "\u003c- Back",
+      "gui.tims_essential_commands.wmv_1_gamerules.label_gamerules": "Gamerules",
+      "gui.tims_essential_commands.wmv_1_perms.button_back": "\u003c- Back",
+      "gui.tims_essential_commands.wmv_1_perms.button_reset": "Reset",
+      "gui.tims_essential_commands.wmv_1_gamerules.CBOutput": "Command Block Output",
+      "gui.tims_essential_commands.wmv_1_main.label_gamerules": "Gamerules"
+    },
+    "de_de": {
+      "gui.tims_essential_commands.wmv_1_perms.label_command_perms": "Befehls Berechtigungen",
+      "gui.tims_essential_commands.wmv_1_main.label_world_manager_v1": "World Manager V1",
+      "gui.tims_essential_commands.wmv_1_perms.label_tp_to_spawn": "TP zum Spawn",
+      "gui.tims_essential_commands.wmv_1_gamerules.label_world_manager_v1": "World Manager V1",
+      "gui.tims_essential_commands.wmv_1_perms.TPtoSpawnPermLVL": "0",
+      "gui.tims_essential_commands.wmv_1_perms.label_world_manager_v1": "World Manager V1",
+      "gui.tims_essential_commands.wmv_1_perms.label_setting_spawn": "Spawn setzen",
+      "gui.tims_essential_commands.wmv_1_perms.label_permission_level_04": "Berechtigungs Level (0-4)",
+      "gui.tims_essential_commands.wmv_1_perms.button_empty1": "-",
+      "gui.tims_essential_commands.wmv_1_main.label_command_perms": "Befehls Berechtigungen",
+      "gui.tims_essential_commands.wmv_1_main.button_open1": "Öffnen",
+      "gui.tims_essential_commands.wmv_1_perms.button_empty2": "-",
+      "gui.tims_essential_commands.wmv_1_perms.button_empty3": "+",
+      "gui.tims_essential_commands.wmv_1_perms.label_permission_name": "Berechtigungs Name",
+      "gui.tims_essential_commands.wmv_1_perms.button_reset1": "Zurücksezten",
+      "gui.tims_essential_commands.wmv_1_main.button_open": "Öffnen",
+      "key.tims_essential_commands.wmv_1": "World Manager V1",
+      "gui.tims_essential_commands.wmv_1_perms.button_empty": "+",
+      "gui.tims_essential_commands.wmv_1_perms.SetSpawnPermLVL": "2",
+      "gui.tims_essential_commands.wmv_1_gamerules.DNCycle": "Tag - Nacht Zyklus",
+      "gui.tims_essential_commands.wmv_1_gamerules.button_back": "\u003c- Zurück",
+      "gui.tims_essential_commands.wmv_1_gamerules.label_gamerules": "Spiel Einstellungen",
+      "gui.tims_essential_commands.wmv_1_perms.button_back": "\u003c- Zurück",
+      "gui.tims_essential_commands.wmv_1_perms.button_reset": "Zurücksetzten",
+      "gui.tims_essential_commands.wmv_1_gamerules.CBOutput": "Command Block Ausgabe",
+      "gui.tims_essential_commands.wmv_1_main.label_gamerules": "Spiel Einstellungen"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "commands",
+        "children": []
+      },
+      {
+        "name": "on_join",
+        "children": []
+      },
+      {
+        "name": "command_procedures",
+        "children": []
+      },
+      {
+        "name": "keybind_procedures",
+        "children": []
+      },
+      {
+        "name": "Keybinds",
+        "children": []
+      },
+      {
+        "name": "GUIs",
+        "children": []
+      },
+      {
+        "name": "GUI_procedures",
+        "children": [
+          {
+            "name": "Perms",
+            "children": [
+              {
+                "name": "Set_Spawn",
+                "children": []
+              },
+              {
+                "name": "TP_to_Spawn",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "on_start",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "tims_essential_commands",
+    "modName": "Tims Essential Commands",
+    "version": "1.0.0",
+    "author": "timpi_t1u1mz0, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.tec",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}
