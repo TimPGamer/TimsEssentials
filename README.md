@@ -32,3 +32,11 @@ that uses the command, to the previously set Spawn.
 Syntax:
 
 /spawn
+
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
