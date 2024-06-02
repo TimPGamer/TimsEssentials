@@ -82,6 +82,35 @@
           "x": 146,
           "y": 88
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_open2",
+          "text": "Open",
+          "onClick": {
+            "name": "WMV1ToSpawnSettings"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 96,
+          "y": 108
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spawn_settings",
+          "text": {
+            "fixedValue": "Spawn Settings"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 146,
+          "y": 113
+        }
       }
     ],
     "gridSettings": {

@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mcreator.tec.client.gui.WMV1SpawnSettingsScreen;
 import net.mcreator.tec.client.gui.WMV1PermsScreen;
 import net.mcreator.tec.client.gui.WMV1MainScreen;
 import net.mcreator.tec.client.gui.WMV1GamerulesScreen;
@@ -23,6 +24,7 @@ public class TimsEssentialCommandsModScreens {
 			MenuScreens.register(TimsEssentialCommandsModMenus.WMV_1_MAIN, WMV1MainScreen::new);
 			MenuScreens.register(TimsEssentialCommandsModMenus.WMV_1_GAMERULES, WMV1GamerulesScreen::new);
 			MenuScreens.register(TimsEssentialCommandsModMenus.WMV_1_PERMS, WMV1PermsScreen::new);
+			MenuScreens.register(TimsEssentialCommandsModMenus.WMV_1_SPAWN_SETTINGS, WMV1SpawnSettingsScreen::new);
 		});
 	}
 }

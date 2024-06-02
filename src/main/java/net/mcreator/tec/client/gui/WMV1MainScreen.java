@@ -27,6 +27,7 @@ public class WMV1MainScreen extends AbstractContainerScreen<WMV1MainMenu> {
 	private final Player entity;
 	Button button_open;
 	Button button_open1;
+	Button button_open2;
 
 	public WMV1MainScreen(WMV1MainMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -77,6 +78,7 @@ public class WMV1MainScreen extends AbstractContainerScreen<WMV1MainMenu> {
 		this.font.draw(poseStack, new TranslatableComponent("gui.tims_essential_commands.wmv_1_main.label_world_manager_v1"), 82, 6, -12829636);
 		this.font.draw(poseStack, new TranslatableComponent("gui.tims_essential_commands.wmv_1_main.label_gamerules"), 57, 26, -12829636);
 		this.font.draw(poseStack, new TranslatableComponent("gui.tims_essential_commands.wmv_1_main.label_command_perms"), 57, 51, -12829636);
+		this.font.draw(poseStack, new TranslatableComponent("gui.tims_essential_commands.wmv_1_main.label_spawn_settings"), 57, 76, -12829636);
 	}
 
 	@Override
@@ -105,5 +107,13 @@ public class WMV1MainScreen extends AbstractContainerScreen<WMV1MainMenu> {
 		});
 		guistate.put("button:button_open1", button_open1);
 		this.addRenderableWidget(button_open1);
+		button_open2 = new Button(this.leftPos + 7, this.topPos + 71, 46, 20, new TranslatableComponent("gui.tims_essential_commands.wmv_1_main.button_open2"), e -> {
+			if (true) {
+				TimsEssentialCommandsMod.PACKET_HANDLER.sendToServer(new WMV1MainButtonMessage(2, x, y, z));
+				WMV1MainButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
+		});
+		guistate.put("button:button_open2", button_open2);
+		this.addRenderableWidget(button_open2);
 	}
 }

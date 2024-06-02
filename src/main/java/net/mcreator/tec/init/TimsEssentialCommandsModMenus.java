@@ -12,6 +12,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 
+import net.mcreator.tec.world.inventory.WMV1SpawnSettingsMenu;
 import net.mcreator.tec.world.inventory.WMV1PermsMenu;
 import net.mcreator.tec.world.inventory.WMV1MainMenu;
 import net.mcreator.tec.world.inventory.WMV1GamerulesMenu;
@@ -25,6 +26,7 @@ public class TimsEssentialCommandsModMenus {
 	public static final MenuType<WMV1MainMenu> WMV_1_MAIN = register("wmv_1_main", (id, inv, extraData) -> new WMV1MainMenu(id, inv, extraData));
 	public static final MenuType<WMV1GamerulesMenu> WMV_1_GAMERULES = register("wmv_1_gamerules", (id, inv, extraData) -> new WMV1GamerulesMenu(id, inv, extraData));
 	public static final MenuType<WMV1PermsMenu> WMV_1_PERMS = register("wmv_1_perms", (id, inv, extraData) -> new WMV1PermsMenu(id, inv, extraData));
+	public static final MenuType<WMV1SpawnSettingsMenu> WMV_1_SPAWN_SETTINGS = register("wmv_1_spawn_settings", (id, inv, extraData) -> new WMV1SpawnSettingsMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

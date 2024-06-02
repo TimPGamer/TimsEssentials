@@ -417,6 +417,86 @@
         ]
       },
       "path": "~/GUI_procedures"
+    },
+    {
+      "name": "WMV1SpawnSettings",
+      "type": "gui",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wmv_1_spawn_settings",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/client/gui/WMV1SpawnSettingsScreen.java",
+          "src/main/java/net/mcreator/tec/network/WMV1SpawnSettingsButtonMessage.java",
+          "src/main/java/net/mcreator/tec/world/inventory/WMV1SpawnSettingsMenu.java"
+        ]
+      },
+      "path": "~/GUIs"
+    },
+    {
+      "name": "WMV1ToSpawnSettings",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wmv_1_to_spawn_settings",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/procedures/WMV1ToSpawnSettingsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI_procedures"
+    },
+    {
+      "name": "WMV1Command",
+      "type": "command",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wmv_1_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/command/WMV1CommandCommand.java"
+        ]
+      },
+      "path": "~/commands"
+    },
+    {
+      "name": "WMV1Command2",
+      "type": "command",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wmv_1_command_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tec/command/WMV1Command2Command.java"
+        ]
+      },
+      "path": "~/commands"
     }
   ],
   "variable_elements": [
@@ -479,10 +559,17 @@
   "language_map": {
     "en_gb": {
       "gui.tims_essential_commands.wmv_1_perms.label_command_perms": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_back": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
       "gui.tims_essential_commands.wmv_1_main.label_world_manager_v1": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty6": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty7": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
       "gui.tims_essential_commands.wmv_1_perms.label_tp_to_spawn": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
       "gui.tims_essential_commands.wmv_1_gamerules.label_world_manager_v1": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
       "gui.tims_essential_commands.wmv_1_perms.TPtoSpawnPermLVL": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
+      "gui.tims_essential_commands.wmv_1_main.label_spawn_settings": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.label_empty": "-----------------------------------------",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.label_y_coordinate": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
       "gui.tims_essential_commands.wmv_1_perms.label_world_manager_v1": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
       "gui.tims_essential_commands.wmv_1_perms.label_setting_spawn": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
       "gui.tims_essential_commands.wmv_1_perms.label_permission_level_04": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
@@ -491,7 +578,9 @@
       "gui.tims_essential_commands.wmv_1_main.button_open1": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
       "gui.tims_essential_commands.wmv_1_perms.button_empty2": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
       "gui.tims_essential_commands.wmv_1_perms.button_empty3": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
+      "gui.tims_essential_commands.wmv_1_main.button_open2": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
       "gui.tims_essential_commands.wmv_1_perms.label_permission_name": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.label_x_coordinate": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
       "gui.tims_essential_commands.wmv_1_perms.button_reset1": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
       "gui.tims_essential_commands.wmv_1_main.button_open": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
       "key.tims_essential_commands.wmv_1": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
@@ -501,18 +590,33 @@
       "gui.tims_essential_commands.wmv_1_gamerules.DNCycle": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
       "gui.tims_essential_commands.wmv_1_gamerules.button_back": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
       "gui.tims_essential_commands.wmv_1_perms.label_empty": "-----------------------------------------",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.label_spawn_settings": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
       "gui.tims_essential_commands.wmv_1_gamerules.label_gamerules": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
       "gui.tims_essential_commands.wmv_1_perms.button_back": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
       "gui.tims_essential_commands.wmv_1_perms.button_reset": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
       "gui.tims_essential_commands.wmv_1_gamerules.CBOutput": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
-      "gui.tims_essential_commands.wmv_1_main.label_gamerules": "Bo\u0027oh\u0027oh\u0027Wa\u0027er"
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty2": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.label_world_manager_v1": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty3": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty4": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty5": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
+      "gui.tims_essential_commands.wmv_1_main.label_gamerules": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.label_z_coordinate": "Bo\u0027oh\u0027oh\u0027Wa\u0027er",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty1": "Bo\u0027oh\u0027oh\u0027Wa\u0027er"
     },
     "en_us": {
       "gui.tims_essential_commands.wmv_1_perms.label_command_perms": "Command Perms",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty": "+",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_back": "\u003c- Back",
       "gui.tims_essential_commands.wmv_1_main.label_world_manager_v1": "World Manager V1",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty6": "\u003c",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty7": "\u003e",
       "gui.tims_essential_commands.wmv_1_perms.label_tp_to_spawn": "TP to Spawn",
       "gui.tims_essential_commands.wmv_1_gamerules.label_world_manager_v1": "World Manager V1",
       "gui.tims_essential_commands.wmv_1_perms.TPtoSpawnPermLVL": "0",
+      "gui.tims_essential_commands.wmv_1_main.label_spawn_settings": "Spawn Settings",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.label_empty": "-----------------------------------------",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.label_y_coordinate": "Y Coordinate",
       "gui.tims_essential_commands.wmv_1_perms.label_world_manager_v1": "World Manager V1",
       "gui.tims_essential_commands.wmv_1_perms.label_setting_spawn": "Setting Spawn",
       "gui.tims_essential_commands.wmv_1_perms.label_permission_level_04": "Permission Level (0-4)",
@@ -521,7 +625,9 @@
       "gui.tims_essential_commands.wmv_1_main.button_open1": "Open",
       "gui.tims_essential_commands.wmv_1_perms.button_empty2": "-",
       "gui.tims_essential_commands.wmv_1_perms.button_empty3": "+",
+      "gui.tims_essential_commands.wmv_1_main.button_open2": "Open",
       "gui.tims_essential_commands.wmv_1_perms.label_permission_name": "Permission Name",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.label_x_coordinate": "X Coordinate",
       "gui.tims_essential_commands.wmv_1_perms.button_reset1": "Reset",
       "gui.tims_essential_commands.wmv_1_main.button_open": "Open",
       "key.tims_essential_commands.wmv_1": "World Manager V1",
@@ -531,18 +637,33 @@
       "gui.tims_essential_commands.wmv_1_gamerules.DNCycle": "Daylight - Night Cycle",
       "gui.tims_essential_commands.wmv_1_gamerules.button_back": "\u003c- Back",
       "gui.tims_essential_commands.wmv_1_perms.label_empty": "-----------------------------------------",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.label_spawn_settings": "Spawn Settings",
       "gui.tims_essential_commands.wmv_1_gamerules.label_gamerules": "Gamerules",
       "gui.tims_essential_commands.wmv_1_perms.button_back": "\u003c- Back",
       "gui.tims_essential_commands.wmv_1_perms.button_reset": "Reset",
       "gui.tims_essential_commands.wmv_1_gamerules.CBOutput": "Command Block Output",
-      "gui.tims_essential_commands.wmv_1_main.label_gamerules": "Gamerules"
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty2": "-",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.label_world_manager_v1": "World Manager V1",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty3": "+",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty4": "+",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty5": "-",
+      "gui.tims_essential_commands.wmv_1_main.label_gamerules": "Gamerules",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.label_z_coordinate": "Z Coordinate",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty1": "-"
     },
     "de_de": {
       "gui.tims_essential_commands.wmv_1_perms.label_command_perms": "Befehls Berechtigungen",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty": "+",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_back": "\u003c- Zurück",
       "gui.tims_essential_commands.wmv_1_main.label_world_manager_v1": "World Manager V1",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty6": "\u003c",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty7": "\u003e",
       "gui.tims_essential_commands.wmv_1_perms.label_tp_to_spawn": "TP zum Spawn",
       "gui.tims_essential_commands.wmv_1_gamerules.label_world_manager_v1": "World Manager V1",
       "gui.tims_essential_commands.wmv_1_perms.TPtoSpawnPermLVL": "0",
+      "gui.tims_essential_commands.wmv_1_main.label_spawn_settings": "Spawn Einstellungen",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.label_empty": "-----------------------------------------",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.label_y_coordinate": "Y Coordinate",
       "gui.tims_essential_commands.wmv_1_perms.label_world_manager_v1": "World Manager V1",
       "gui.tims_essential_commands.wmv_1_perms.label_setting_spawn": "Spawn setzen",
       "gui.tims_essential_commands.wmv_1_perms.label_permission_level_04": "Berechtigungs Level (0-4)",
@@ -551,7 +672,9 @@
       "gui.tims_essential_commands.wmv_1_main.button_open1": "Öffnen",
       "gui.tims_essential_commands.wmv_1_perms.button_empty2": "-",
       "gui.tims_essential_commands.wmv_1_perms.button_empty3": "+",
+      "gui.tims_essential_commands.wmv_1_main.button_open2": "Öffnen",
       "gui.tims_essential_commands.wmv_1_perms.label_permission_name": "Berechtigungs Name",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.label_x_coordinate": "X Coordinate",
       "gui.tims_essential_commands.wmv_1_perms.button_reset1": "Zurücksezten",
       "gui.tims_essential_commands.wmv_1_main.button_open": "Öffnen",
       "key.tims_essential_commands.wmv_1": "World Manager V1",
@@ -561,11 +684,19 @@
       "gui.tims_essential_commands.wmv_1_gamerules.DNCycle": "Tag - Nacht Zyklus",
       "gui.tims_essential_commands.wmv_1_gamerules.button_back": "\u003c- Zurück",
       "gui.tims_essential_commands.wmv_1_perms.label_empty": "-----------------------------------------",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.label_spawn_settings": "Spawn Einstellungen",
       "gui.tims_essential_commands.wmv_1_gamerules.label_gamerules": "Spiel Einstellungen",
       "gui.tims_essential_commands.wmv_1_perms.button_back": "\u003c- Zurück",
       "gui.tims_essential_commands.wmv_1_perms.button_reset": "Zurücksetzten",
       "gui.tims_essential_commands.wmv_1_gamerules.CBOutput": "Command Block Ausgabe",
-      "gui.tims_essential_commands.wmv_1_main.label_gamerules": "Spiel Einstellungen"
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty2": "-",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.label_world_manager_v1": "World Manager V1",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty3": "+",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty4": "+",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty5": "-",
+      "gui.tims_essential_commands.wmv_1_main.label_gamerules": "Spiel Einstellungen",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.label_z_coordinate": "Z Coordinate",
+      "gui.tims_essential_commands.wmv_1_spawn_settings.button_empty1": "-"
     }
   },
   "foldersRoot": {
